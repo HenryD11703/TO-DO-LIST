@@ -5,7 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TO DO List</title>
 </head>
+<link rel="stylesheet" href="styles.css">
+
 <body>
-    
+    <header>
+        <h1>Mi Lista de Tareas</h1>
+    </header>
+    <main>
+        <form id="task-form">
+            <input type="text" id="task-input" placeholder="Agregar nueva tarea" required>
+            <button type="submit" id="boton">Agregar</button>
+        </form>
+        <ul id="task-list">
+            <!-- Las tareas se agregarán aquí dinámicamente -->
+        </ul>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
