@@ -6,12 +6,14 @@ boton.addEventListener('click', () => {
   const task = document.createElement('li');
   const label = document.createElement('label');
   const checkbox = document.createElement('input');
-  checkbox.type = 'checkbox';
-  label.appendChild(checkbox);
-  label.appendChild(document.createTextNode(taskInput.value));
-  task.appendChild(label);
-  taskList.appendChild(task);
-  taskInput.value = '';
+  if (taskInput.value) {
+    task.appendChild(label);
+    label.appendChild(checkbox);
+    label.appendChild(document.createTextNode(taskInput.value));
+    checkbox.type = 'checkbox';
+    taskList.appendChild(task);
+    taskInput.value = '';
+  }
 });
 
 taskList.addEventListener('change', (event) => {
