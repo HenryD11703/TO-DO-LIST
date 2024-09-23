@@ -1,11 +1,12 @@
 body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: #282a36;
+    font-family: 'Roboto', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #1e1f29;
     color: #f8f8f2;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 40px;
+    line-height: 1.6;
 }
 
 #task-form {
@@ -13,40 +14,67 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 500px;
-    margin-bottom: 20px;
+    max-width: 600px;
+    margin-bottom: 30px;
+    background-color: #282a36;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 #task-input {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #373b44;
-    color: #f8f8f2;
-    font-size: 16px;
-}
-
-#boton {
-    padding: 10px 20px;
+    padding: 12px;
+    margin-bottom: 15px;
     border: none;
     border-radius: 5px;
     background-color: #44475a;
     color: #f8f8f2;
-    cursor: pointer;
+    font-size: 16px;
     transition: background-color 0.3s ease;
 }
 
-h1 {
+#task-input:focus {
+    background-color: #50556e;
+    outline: none;
+}
+
+#boton {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    background-color: #6272a4;
     color: #f8f8f2;
-    margin-bottom: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#boton:hover {
+    background-color: #7b89b9;
+    transform: translateY(-2px);
+}
+
+h1 {
+    color: #bd93f9;
+    margin-bottom: 30px;
+    font-family: 'Roboto', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2.5em;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 #task-list {
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
     margin-bottom: 20px;
     list-style-type: none;
+    color: #f8f8f2;
+    background-color: #282a36;
+    border: #44475a 1px solid;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
